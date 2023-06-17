@@ -1,0 +1,15 @@
+{
+  "name": "tutorial-front-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app/chat-admin",
+    "app/chat-web"
+  ],
+  "scripts": {
+    "dev:admin": "yarn workspace chat-admin dev",
+    "dev:web": "yarn workspace chat-web dev"
+  }
+}

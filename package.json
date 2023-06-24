@@ -11,5 +11,11 @@
   "scripts": {
     "dev:admin": "yarn workspace chat-admin dev",
     "dev:web": "yarn workspace chat-web dev"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.5",
+    "react-is": "^18.2.0"
   }
 }

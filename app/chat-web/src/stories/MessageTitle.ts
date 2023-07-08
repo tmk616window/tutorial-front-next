@@ -13,4 +13,5 @@ export const MessageTitle = styled(Typography)({
   letterSpacing: '8.81px',
 })
 
+
 // <div style={{width: 311, height: 27.04, color: '#0F82FF', fontSize: 25.92, fontFamily: 'Poppins', fontWeight: '500', textTransform: 'uppercase', lineHeight: 41.08, letterSpacing: 8.81, wordWrap: 'break-word'}}>Messages</div>

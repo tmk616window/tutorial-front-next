@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ListItem from '@mui/material/ListItem';
-import { Icon } from './Icon';
+import Icon from './Icon';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles'
 import { Stack } from '@mui/material'
@@ -8,12 +8,7 @@ import { Stack } from '@mui/material'
 const ChatCard = styled(ListItem)({
   marginBottom: '10px',
   backgroundColor: "#002046",
-  height: '143px',
-  width: '495px',
-  borderRadius: '6px',
-  Padding: '30px, 22px, 30px, 22px',
-  Gap: '30px',
-  // margin: '15px auto',
+  width: '350px'
 });
 
 const Name = styled(Typography)({
@@ -32,15 +27,16 @@ const MessageText = styled(Typography)({
   lineHeight: '158.5%'
 });
 
-export const ChatListitem = () => {
+const ChatListitem = () => {
   return (
-    <ChatCard>
-      <Icon alt="icon" src="" height={83} width={83} />
+    <ChatCard sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+      <Icon height={60} width={60} />
       <Stack >
         <Name
           sx={{ display: 'inline' }}
           variant="body2"
           color="#C9C9C9"
+          gap={2}
         >
           Sandra Adams
         </Name >
@@ -54,3 +50,5 @@ export const ChatListitem = () => {
     </ChatCard>
   );
 }
+
+export default ChatListitem

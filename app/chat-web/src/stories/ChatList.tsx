@@ -1,26 +1,23 @@
 import * as React from 'react';
 import List from '@mui/material/List';
-import { ChatListitem } from './ChatListitem';
-import { styled } from '@mui/material/styles'
+import ChatListitem from './ChatListitem';
 import { MessageTitle } from './MessageTitle';
-
-const ChatListItem = styled(List)({
-  height: '1,819.04px',
-  width: '517px',
-  Left: '334px',
-  top: '0px',
-})
 
 export const ChatList = () => {
   return (
-    <>
-      <MessageTitle>messages</MessageTitle>
-      <ChatListItem sx={{ bgcolor: 'red', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <ChatListitem />
-        <ChatListitem />
-        <ChatListitem />
-        <ChatListitem />
-      </ChatListItem>
-    </>
+    <List sx={{ width: "100%", height: "93vh", overflow: 'auto' }}>
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+      <ChatListitem />
+    </List>
   );
 }
+
+export default ChatList
